@@ -15,8 +15,8 @@
 [string]$BasePath = "C:\Admin\Scripts"
 [string]$LogfileFullPath = Join-Path -Path $BasePath (Join-Path "Logs" ("CreateCompanyContacts_{0:yyyyMMdd-HHmmss}.log" -f [DateTime]::Now))
 $Script:NoLogging
-$ExchangeNameSpace = "winmail.e-control.loc"
-$ContactFolderName = "ECA-Kontakte"
+$ExchangeNameSpace = ""
+$ContactFolderName = ""
 
 # Disable the Active Directory Provider
 $Env:ADPS_LoadDefaultDrive = 0
